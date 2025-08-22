@@ -28,8 +28,8 @@ const currencyData = require("../utils/currency");
 const Attribute = require("../models/Attribute");
 const attributeData = require("../utils/attributes");
 
-const Setting = require("../models/Setting");
-const settingData = require("../utils/settings");
+// const Setting = require("../models/Setting");
+// const settingData = require("../utils/settings");
 
 connectDB();
 const importData = async () => {
@@ -61,8 +61,8 @@ const importData = async () => {
     // await Order.deleteMany();
     // await Order.insertMany(orderData);
 
-    await Setting.deleteMany();
-    await Setting.insertMany(settingData);
+    // await Setting.deleteMany();
+    // await Setting.insertMany(settingData);
 
     console.log("data inserted successfully!");
     process.exit();
